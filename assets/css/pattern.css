@@ -1,0 +1,77 @@
+/* Color Pattern */
+
+:root {
+  --primary-color: #dcf64b;
+  --second-color: #a0b435;
+  --black-color: #000000;
+  --black-color-medium: #0c0c0c;
+  --semi-black: #1e1e1e;
+  --white-color: #ffffff;
+  --white-color-alpha: #f1f1f1;
+}
+
+.container {
+  width: 100%;
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0rem 1.8rem;
+}
+
+h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 6.4rem;
+  line-height: 7.7rem;
+  color: var(--white-color);
+}
+
+h2 span {
+  color: var(--primary-color);
+}
+
+.btn-primary {
+  border-radius: 2.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  padding: 1rem 2.6rem;
+  transition: all 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--white-color);
+  transform: scale(1.04);
+}
+
+.btn-primary.empty {
+  border: 2px solid var(--primary-color);
+  border-radius: 2.4rem;
+  color: var(--primary-color);
+  background-color: transparent;
+  transition: all 0.2s;
+}
+
+.btn-primary.empty:hover {
+  color: var(--black-color);
+  background-color: var(--primary-color);
+}
+
+.menu-item {
+  display: inline-block;
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+
+.tag {
+  border-radius: 5rem;
+  padding: 0.6rem 2rem;
+  background-color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: 300;
+}
