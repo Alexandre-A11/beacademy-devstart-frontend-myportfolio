@@ -3,6 +3,7 @@
   font-size: 62.5%;
   --grey-dark: #242734;
   --grey-light: #323647;
+  --grey-light-2: #424657;
   --link-off: #656772;
   --text-off: #bcbabc;
   --highlight: #dcf64b;
@@ -11,30 +12,11 @@
   --font-default: "Libre Baskerville", serif;
   --font-attention: "League Spartan", sans-serif;
   --font-logo: "Comfortaa";
+
+  --margin-top: 10rem;
 }
 
-/* temp */
-header {
-  /* border: 0.1rem solid lightblue; */
-}
-
-.name {
-  /* border: 0.2rem solid lightseagreen; */
-}
-.about {
-  /* border: 0.2rem solid lightcoral; */
-}
-
-.about-plus {
-  /* border: 0.2rem solid lime; */
-}
-.about-plus .about-me-plus {
-  /* border: 0.2rem solid lightgreen; */
-}
-
-.about-plus .social-media {
-  /* border: 0.2rem solid lightpink; */
-}
+/* s-success */
 
 /* default */
 * {
@@ -48,13 +30,45 @@ header {
 body {
   font-family: var(--font-default);
   font-size: 2.4rem;
-  margin: 0 24rem;
   background-color: var(--grey-light);
   color: var(--text-off);
 }
+
+.container {
+  margin: 0 24rem;
+  padding: 0 2rem;
+}
+
+.dot {
+  color: var(--highlight);
+  line-height: 0;
+  font-size: 180%;
+}
+
+.text-highlight {
+  font-style: italic;
+  color: var(--white-default);
+  margin: 3rem 0;
+}
+
+.text-default {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  letter-spacing: 0.2rem;
+}
+
+.link {
+  font-size: 2rem;
+  color: var(--highlight);
+}
+.link span:first-child {
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
 /* Header */
 header {
-  margin: 8rem 0;
+  margin-top: var(--margin-top);
 }
 nav {
   display: flex;
@@ -71,105 +85,191 @@ nav::before {
   color: var(--highlight);
 }
 
-header .intro {
-  display: flex;
-}
 .menu {
   display: flex;
   width: 50%;
   text-transform: uppercase;
-  /* font-style: italic; */
   font-weight: 700;
   color: var(--link-off);
   justify-content: space-between;
 }
 
-.name {
+/* Section s-hero */
+
+.s-hero {
+  margin-top: var(--margin-top);
+}
+.s-hero div {
+  display: flex;
+}
+.s-hero .name {
   font-family: var(--font-attention);
   color: var(--white-default);
   text-transform: uppercase;
   font-size: 5rem;
   font-weight: 900;
   width: 100%;
-  margin-top: 10rem;
   letter-spacing: 0.3rem;
+  flex-direction: column;
 }
 
-.intro .name h1 span:first-of-type {
+.s-hero .name h1 span:first-of-type {
   color: var(--highlight);
   padding-left: 10rem;
 }
-.intro .name h1 span:last-of-type {
+.s-hero .name h1 span:last-of-type {
   padding-left: 20rem;
 }
 
-.intro .name h1 span .dot {
+.s-hero .name h1 span .dot {
   padding-left: 0;
   font-size: 130%;
 }
 
-.intro .name h2 {
+.s-hero .name h2 {
   color: var(--highlight);
 }
-.intro .about {
+.s-hero .about {
   display: flex;
   flex-direction: column;
   line-height: 4rem;
-  max-width: 60rem;
-  margin-top: 10rem;
+  max-width: 46.5rem;
 }
 
-.intro .about h5 {
+.s-hero .about h5 {
   letter-spacing: 0.2rem;
 }
 
-.intro .about h2 {
-  font-style: italic;
-  color: var(--white-default);
-  margin: 3rem 0;
+.s-hero .about-plus {
+  margin-top: var(--margin-top);
 }
 
-.intro .about p {
-  font-size: 1.6rem;
-  line-height: 3rem;
-  letter-spacing: 0.2rem;
-}
-
-.dot {
-  color: var(--highlight);
-  line-height: 0;
-  font-size: 180%;
-}
-
-.about-plus {
-  display: flex;
-  padding-top: 10rem;
-}
-
-.about-plus .social-media {
+.s-hero .about-plus .social-media {
   margin-right: auto;
   align-self: center;
 }
 
-.about-plus .social-media ul {
+.s-hero .about-plus .social-media ul {
   display: flex;
   color: var(--white-default);
 }
 
-.about-plus .social-media ul li {
+.s-hero .about-plus .social-media ul li {
   display: flex;
   margin: 0 1rem;
 }
-.about-plus .about-me-plus {
-  min-width: 59.6rem;
+.s-hero .about-plus .about-me-plus {
+  min-width: 46.5rem;
+}
+/* Section s-success */
+.s-success {
+  background-color: var(--grey-dark);
+  margin-top: var(--margin-top);
+  padding-top: var(--margin-top);
 }
 
-.about-plus .about-me-plus h2 {
-  font-size: 2rem;
-  color: var(--highlight);
-  /* border-bottom: 0.2rem solid red; */
+.s-success .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
 }
-.about-plus .about-me-plus h2 span:first-child {
-  font-style: italic;
-  text-decoration-line: underline;
+
+.s-success .container h6 {
+  font-size: 1.4rem;
+  position: absolute;
+}
+.s-success .container h6 + h2 {
+  position: absolute;
+}
+.s-success .container .contato-email .link {
+  margin-top: 2rem;
+}
+.s-success .container .quote {
+  max-width: 55rem;
+}
+
+.s-success .container .quote p:last-child {
+  margin-top: 2rem;
+}
+
+.s-success .container:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--margin-top);
+}
+.s-success .cards {
+  display: flex;
+}
+.s-success .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: var(--grey-light-2);
+  transform: translateY(14rem);
+  border-radius: 4px;
+  height: 20rem;
+  width: 40rem;
+}
+
+.s-success .cards .card:nth-child(2) {
+  margin: 0 3rem;
+}
+
+.s-success .container .cards .card:nth-child(1) img {
+  width: 6rem;
+}
+
+.s-success .container .cards .card:nth-child(2) img {
+  width: 5rem;
+}
+
+.s-success .container .cards .card:nth-child(3) img {
+  width: 7rem;
+}
+/* Section resume-me */
+.s-resume {
+  background-color: #323647;
+}
+
+.s-resume .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 60rem;
+}
+
+.s-resume .container .tech-stack {
+  display: flex;
+  justify-content: center;
+  margin-top: 14.4rem;
+  width: 100%;
+}
+
+.s-resume .container .tech-stack ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  margin-top: var(--margin-top);
+  flex-wrap: wrap;
+}
+
+.s-resume .container .tech-stack ul li {
+  font-size: 10rem;
+  margin: 0 3rem;
+  color: var(--link-off);
+  color: var(--grey-dark);
+}
+
+/* Section about */
+.about-me {
+  margin-top: var(--margin-top);
+  background-color: var(--grey-dark);
+}
+.about-me .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  height: 60rem;
 }
