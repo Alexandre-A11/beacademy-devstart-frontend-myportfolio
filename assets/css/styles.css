@@ -95,6 +95,11 @@ nav::before {
   justify-content: space-between;
 }
 
+.menu li:hover {
+  color: var(--highlight);
+  cursor: pointer;
+}
+
 /* Section s-hero */
 
 .s-hero {
