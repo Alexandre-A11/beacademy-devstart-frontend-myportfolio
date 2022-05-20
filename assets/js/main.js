@@ -20,8 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const typeSpan = '<span class="typing" aria-hidden="true"></span>';
     // array with texts to type in typewriter
     const dataText = [
-        "Olá, meu nome é Weverton Alexandre.",
-        "Mas pode me chamar de Alexandre.",
+        "Olá, meu nome é Alexandre.",
         "Seja bem vindo ao meu portfólio. 😁",
     ];
 
@@ -41,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // text finished, call callback if there is a callback function
         else if (typeof fnCallback == "function") {
             // call callback after timeout
-            setTimeout(fnCallback, 5000);
+            setTimeout(fnCallback, 4000);
             h1.innerHTML =
                 text
                     .replace(".", "<span class='dot'>.</span>")

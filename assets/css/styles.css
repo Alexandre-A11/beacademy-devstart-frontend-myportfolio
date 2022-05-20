@@ -309,6 +309,34 @@ nav::before {
   border-radius: 4px;
   height: 20rem;
   width: 40rem;
+  /* box-shadow: 1rem 1rem 0 -0.4rem var(--highlight); */
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.s-success .cards .card::after {
+  content: "";
+  right: -1.5rem;
+  top: 1.5rem;
+  width: 100%;
+  height: 100%;
+  background: var(--highlight);
+  border-image-slice: 1;
+  position: absolute;
+  transform: translateZ(-1px);
+  clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.s-success .cards .card:hover::after {
+  right: -2rem;
+  top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.s-success .cards .card:hover {
+  /* box-shadow: 2rem 2rem 0 -0.4rem var(--highlight); */
+  /* transition: all 0.3s ease-in-out; */
 }
 
 .s-success .cards .card:nth-child(2) {
