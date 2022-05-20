@@ -315,6 +315,7 @@ nav::before {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: var(--margin-top);
 }
 .s-contact .container h2 {
   font-size: 5rem;
@@ -372,3 +373,23 @@ textarea {
 }
 
 /* Footer */
+footer {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .text-default {
+  font-size: 1.2rem;
+}
+footer p span:first-child {
+  color: #dcf64b;
+  font-family: "Comfortaa";
+}
+
+footer p span:last-child {
+  color: #fff;
+  font-weight: bold;
+}
