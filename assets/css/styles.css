@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=League+Spartan:wght@800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
 :root {
   font-size: 62.5%;
   --grey-dark: #242734;
@@ -228,6 +229,7 @@ nav::before {
 .s-success .container .cards .card:nth-child(3) img {
   width: 7rem;
 }
+
 /* Section resume-me */
 .s-resume {
   background-color: #323647;
@@ -264,12 +266,109 @@ nav::before {
 
 /* Section about */
 .about-me {
-  margin-top: var(--margin-top);
+  /* margin-top: var(--margin-top); */
   background-color: var(--grey-dark);
 }
 .about-me .container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 0;
+  flex-direction: row-reverse;
   height: 60rem;
 }
+
+.about-me .container .photo {
+  width: 30rem;
+  height: 30rem;
+  background-color: var(--grey-light);
+}
+
+.about-me .container .who-i-am {
+  max-width: 90rem;
+  text-align: justify;
+}
+
+/* Section s-projects */
+.s-projects {
+  /* margin-top: var(--margin-top); */
+}
+.swiper {
+  width: 80%;
+  padding-bottom: 5rem;
+}
+
+.swiper-slide {
+  width: 80%;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+/* Section s-contact */
+.s-contact {
+  margin-top: var(--margin-top);
+  background-color: var(--grey-dark);
+}
+
+.s-contact .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-contact .container h2 {
+  font-size: 5rem;
+  width: 50%;
+}
+.s-contact .container h2 span:first-of-type {
+  margin-left: 8rem;
+}
+
+.s-contact .container h2 span:nth-of-type(2) {
+  margin-left: 12rem;
+}
+.s-contact .container .contact-form {
+  width: 50%;
+  margin-top: var(--margin-top);
+}
+
+.s-contact .container .contact-form .input-group input[type="text"],
+.s-contact .container .contact-form .input-group input[type="email"] {
+  margin-bottom: 2rem;
+}
+.s-contact .container .contact-form .input-group:last-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.7rem;
+}
+
+.btn-primary {
+  border-radius: 0.4rem;
+  font-weight: bold;
+  background-color: var(--grey-light);
+  color: var(--white-default);
+  padding: 1rem 3rem;
+  border-color: var(--grey-light-2);
+}
+
+.btn-primary:hover {
+  background-color: var(--highlight);
+  color: var(--grey-dark);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background-color: var(--link-off);
+  border: 0.2rem solid var(--grey-light);
+  border-radius: 0.4rem;
+  width: 100%;
+  padding: 1rem;
+  resize: none;
+  color: var(--white-default);
+  outline: none;
+  transition: all 0.4s;
+}
+
+/* Footer */

@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!--prettier-ignore-->
+    <script src="https://kit.fontawesome.com/3b8fd284b2.js" crossorigin="anonymous" ></script>
+    <!--prettier-ignore-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/3b8fd284b2.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <!-- Header -->
@@ -153,9 +153,91 @@
 
       <!-- Section About -->
       <section class="about-me">
-        <div class="container"></div>
+        <div class="container">
+          <div class="photo">
+            <!-- inserir imagem -->
+          </div>
+          <div class="who-i-am text-default">
+            <h2 class="text-highlight">Quem sou<span class="dot">.</span></h2>
+            Nascido em Minas Gerais, morei 20 anos em São Paulo, onde me formei
+            em Sistemas de informação, boa parte do meu tempo dediquei-me a
+            estudar para concursos públicos. Atualmente, resido em Minas Gerais,
+            e estou focado com programação, sinto que finalmente encontrei algo
+            que posso dizer com convicção que adoro de verdade, sou apaixonado
+            por tecnologia e desenvolvimento e estou ansioso para trabalhar na
+            área<span class="dot">.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section s-projects -->
+      <section class="s-projects">
+        <div class="container">
+          <h2 class="text-highlight">Cases<span class="dot">.</span></h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/img/bikcraft.png" alt="Site de Bicicletas" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/edge.png" alt="Site de negócios" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/hotel.png" alt="Site Hotel" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/newsgrid.png" alt="Site de Notícias" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/pig-game.png" alt="Site Pig Game" />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="./assets/img/projetos-DIO.png"
+                  alt="Projetos da DIO"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/img/To-Do-List.png" alt="To-do List" />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section s-contact -->
+      <section class="s-contact">
+        <div class="container">
+          <h2 class="text-highlight">Entre<br><span>em</span><br><span>Contato</span><span class="dot">.</span></h2>
+          <div class="contact-form">
+
+            <form action="#">
+              <div class="input-group">
+                <input required type="text" id="name" name="name" placeholder="Digite seu nome." />
+              </div>
+              <div class="input-group">
+                <input  required type="email" id="email" name="email" placeholder="Digite seu e-mail."/>
+              </div>
+              <div class="input-group">
+                <textarea required name="message" id="message" cols="30" rows="10" placeholder="Deixe sua mensagem."></textarea>
+              </div>
+              <div class="input-group">
+                <button class="btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+        </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
