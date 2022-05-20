@@ -27,6 +27,10 @@
   list-style: none;
 }
 
+a {
+  all: unset;
+}
+
 /* Body */
 body {
   font-family: var(--font-default);
@@ -64,7 +68,28 @@ body {
 }
 .link span:first-child {
   font-style: italic;
+  /* text-decoration-line: underline; */
+}
+
+.link a:hover {
+  color: var(--white-default);
   text-decoration-line: underline;
+  cursor: pointer;
+}
+.link a:hover + .arrow {
+  border-color: var(--highlight);
+  box-shadow: 0.5vmin -0.5vmin 0 var(--link-off);
+}
+.arrow {
+  position: absolute;
+  transform: rotate(45deg);
+  margin: 0.3rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-top: 0.5rem solid var(--white-default);
+  border-right: 0.5rem solid var(--white-default);
+  box-shadow: 0 0 0 var(--highlight);
+  transition: all 200ms ease;
 }
 
 /* Header */
@@ -82,7 +107,7 @@ nav::before {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 0.3;
-  width: 100%;
+  width: 50%;
   color: var(--highlight);
 }
 
@@ -95,13 +120,13 @@ nav::before {
   justify-content: space-between;
 }
 
-.menu li:hover {
+.menu li a:hover {
   color: var(--white-default);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-.menu li {
+.menu li a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,7 +134,7 @@ nav::before {
   position: relative;
 }
 
-.menu li:hover > .dot-menu {
+.menu li a:hover > .dot-menu {
   transition: all 0.5s ease-in-out;
   opacity: 1;
 }
@@ -191,6 +216,7 @@ nav::before {
 .s-hero .about-plus .about-me-plus {
   min-width: 46.5rem;
 }
+
 /* Section s-success */
 .s-success {
   background-color: var(--grey-dark);
