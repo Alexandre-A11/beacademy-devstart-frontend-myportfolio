@@ -167,7 +167,7 @@ nav::before {
   letter-spacing: 0.3rem;
   flex-direction: column;
 }
-
+/*
 .s-hero .name h1 span:first-of-type {
   color: var(--highlight);
   padding-left: 10rem;
@@ -175,15 +175,41 @@ nav::before {
 .s-hero .name h1 span:last-of-type {
   padding-left: 20rem;
 }
-
+*/
+.s-hero .name h1 {
+  max-width: 75%;
+}
 .s-hero .name h1 span .dot {
   padding-left: 0;
   font-size: 130%;
+  max-width: 10%;
+}
+
+.s-hero .name h1 .name-highlight {
+  /* color: var(--highlight); */
 }
 
 .s-hero .name h2 {
   color: var(--highlight);
+  animation: dash 1s steps(1) infinite;
 }
+
+.typing {
+  border-right: 0.1rem solid var(--highlight);
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes dash {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
 .s-hero .about {
   display: flex;
   flex-direction: column;
@@ -217,7 +243,7 @@ nav::before {
 
 .s-hero .about-plus .social-media ul li:last-child {
   color: var(--highlight);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .s-hero .about-plus .social-media ul li:hover {
