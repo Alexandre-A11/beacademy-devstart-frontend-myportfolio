@@ -37,6 +37,7 @@ body {
   font-size: 2.4rem;
   background-color: var(--grey-light);
   color: var(--text-off);
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -297,6 +298,7 @@ nav::before {
 }
 .s-success .cards {
   display: flex;
+  z-index: 1;
 }
 .s-success .cards .card {
   display: flex;
@@ -325,19 +327,20 @@ nav::before {
   position: absolute;
   transform: translateZ(-1px);
   clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
 
 .s-success .cards .card:hover::after {
   right: -2rem;
   top: 2rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
-
+/* 
 .s-success .cards .card:hover {
-  /* box-shadow: 2rem 2rem 0 -0.4rem var(--highlight); */
-  /* transition: all 0.3s ease-in-out; */
-}
+  box-shadow: 2rem 2rem 0 -0.4rem var(--highlight);
+  transition: all 0.3s ease-in-out;
+} 
+*/
 
 .s-success .cards .card:nth-child(2) {
   margin: 0 3rem;
@@ -358,6 +361,8 @@ nav::before {
 /* Section resume-me */
 .s-resume {
   background-color: #323647;
+  position: relative;
+  /* z-index: -1; */
 }
 
 .s-resume .container {
@@ -387,6 +392,14 @@ nav::before {
   margin: 0 3rem;
   color: var(--link-off);
   color: var(--grey-dark);
+  transition: all 0.3s ease-in-out;
+}
+
+.s-resume .container .tech-stack ul li:hover {
+  color: var(--link-on);
+  /* color: var(--highlight); */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Section about */
@@ -406,6 +419,12 @@ nav::before {
   width: 30rem;
   height: 30rem;
   background-color: var(--grey-light);
+}
+
+.about-me .container .photo img {
+  max-width: 30rem;
+  max-height: 30rem;
+  border-radius: 0.4rem;
 }
 
 .about-me .container .who-i-am {

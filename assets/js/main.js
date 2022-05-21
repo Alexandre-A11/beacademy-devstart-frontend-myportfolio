@@ -70,3 +70,30 @@ document.addEventListener("DOMContentLoaded", function () {
     // start the text animation
     StartTextAnimation(0);
 });
+
+ScrollReveal().reveal(
+    `header, 
+    .about h5, 
+    .about h2, 
+    .about p, 
+    .about-plus a, 
+    .about-me-plus, 
+    .s-success .container .contato-email h5,
+    .s-success .container .contato-email h3,
+    .s-success .container .contato-email p,
+    .s-success .container .contato-email h2,
+    .s-success .quote h3,
+    .s-success .quote p,
+    .s-success .container .cards,
+    .s-resume,
+    .about-me .who-i-am,
+    .about-me .container .photo,
+    .s-projects,
+    .s-contact .container`,
+    {
+        interval: 100,
+        easing: "ease",
+        distance: "1rem",
+        scale: 0.85,
+    }
+);
