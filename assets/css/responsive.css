@@ -1,0 +1,129 @@
+@media (max-width: 1800px) {
+  .menu {
+    font-size: 2.1rem;
+  }
+
+  .about-me .container .who-i-am {
+    max-width: 80rem;
+  }
+}
+
+@media (max-width: 1660px) {
+  .menu {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .menu {
+    font-size: 1.8rem;
+  }
+
+  .about-me .container .who-i-am {
+    max-width: 50rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .menu {
+    font-size: 1.5rem;
+  }
+
+  .s-hero .name {
+    font-size: 3rem;
+  }
+
+  .s-hero .about,
+  .s-success {
+    font-size: 2rem;
+  }
+
+  .about-me .container .who-i-am {
+    max-width: 40rem;
+    margin-top: 5rem;
+  }
+
+  .s-contact .container .contact-form {
+    min-width: 50rem;
+  }
+}
+
+@media (max-width: 1340px) {
+  .menu {
+    font-size: 1.2rem;
+  }
+
+  .s-hero .about {
+    max-width: 25rem;
+  }
+  .s-success .container .quote,
+  .s-success .container .contato-email {
+    max-width: 30rem;
+  }
+
+  .cards .card {
+    margin-bottom: 5rem;
+    transform: none;
+  }
+
+  .s-resume .container {
+    display: none;
+  }
+
+  .about-me .container .photo {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    flex-direction: column;
+    min-width: 35rem;
+  }
+
+  .menu li {
+    margin-bottom: 1.5rem;
+  }
+
+  .dot-menu {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+
+  nav::before {
+    margin-bottom: 2rem;
+  }
+  .s-hero div,
+  nav,
+  .s-success .container {
+    flex-direction: column;
+  }
+
+  .social-media {
+    margin-bottom: 2rem;
+  }
+  .s-projects,
+  .s-contact .container h2,
+  .s-success .container h6,
+  .s-success .container h2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .s-success .container .cards .card {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .s-contact .container .contact-form {
+    min-width: 30rem;
+  }
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 50.2%;
+  }
+}
